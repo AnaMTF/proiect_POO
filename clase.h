@@ -11,11 +11,26 @@ void tipComanda(char* tip) {
 	while (token) {
 
 	}
-	if (strcmp(tip, "SELECT")) {
-		Select();
+	if (strcmp(tip, "CREATE")) {
+		Create();
 	}
 	else if (strcmp(tip, "UPDATE")) {
 		Update();
+	}
+	else if (strcmp(tip, "SELECT")) {
+		Select();
+	}
+	else if (strcmp(tip, "INSERT")) {
+		Insert();
+	}
+	else if (strcmp(tip, "DELETE")) {
+		Delete();
+	}
+	else if (strcmp(tip, "DROP")) {
+		Drop();
+	}
+	else if (strcmp(tip, "DISPLAY")) {
+		Display();
 	}
 }
 
@@ -30,36 +45,57 @@ public:
 		this->nume_comanda = tip.nume_comanda;
 	}
 	switch (this->nume_comanda) {
-		case1: "SELECT";
+	case1: "SELECT";
 	}
 
 };
 
 class Select {
+private:
+
+public:
 
 };
 
 class Update {
+private:
+
+public:
 
 };
 
 class Insert {
+private:
+
+public:
 
 };
 
-class Delete{
+class Delete {
+private:
+
+public:
 
 };
 
 class Create {
+private:
+
+public:
 
 };
 
 class Drop {
+private:
+
+public:
 
 };
 
 class Display {
+private:
+
+public:
 
 };
 
